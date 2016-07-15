@@ -18,12 +18,10 @@
             &nbsp; &nbsp;<img src="http://vgnostalgia.com/logo_small.png" alt="footer_logo">&nbsp; &nbsp;
             <a href="http://www.vgnostalgia.com/MVC/view/">Home</a>&nbsp; &nbsp;
 
-            <!-- Add Modal-->
             <a href="submit.php">Add</a>&nbsp; &nbsp;
-            
-            <!-- Submit Modal-->
             <a href="../view/?action=list_content">Edit</a>&nbsp; &nbsp;
-            <a href="http://www.vgnostalgia.com/cit336.php">CIT 336</a>
+            <a href="http://www.vgnostalgia.com/cit336.php">CIT 336</a>&nbsp; &nbsp;
+			<a href="https://www.youtube.com/watch?v=qSQ1Q5qH9Kw">Project Video</a>
         </span>
     </div>
     </div>
