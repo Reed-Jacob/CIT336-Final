@@ -8,6 +8,14 @@
     $username = 'mgs_user';
     $password = 'pa55word';
 	
+	
+/*
+ * Production Settings
+ */
+
+//    $dsn = 'mysql:host=mysql.vgnostalgia.com;dbname=vgnostalgia';
+//    $username = 'iclientvg';
+//    $password = 'iclient123';
 
     try {
         $db = new PDO($dsn, $username, $password);

@@ -91,8 +91,8 @@ if ($action == 'display_content') {
         header("Location: .?action=display_content");
     }
 } else if ($action == 'random') {
-    $video_ids = get_ids();
-    $all_videos = $video_ids->fetchAll(PDO::FETCH_COLUMN, 0);
+    $all_videos = array("");
+	$all_videos = get_ids($all_videos);
     $random_id = array_rand($all_videos, 1);
     header("Location: .?content_id=" . $all_videos[$random_id]);
 }

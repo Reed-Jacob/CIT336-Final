@@ -5,7 +5,8 @@ function get_content() {
               ORDER BY title';
     $statement = $db->prepare($query);
     $statement->execute();
-    return $statement;    
+    return $statement;   
+	$statement->closeCursor();	
 }
 
 function get_title_name($content_id) {
@@ -117,12 +118,14 @@ function submit_edits($content_id, $title, $platform, $year, $video, $descriptio
     $statement->closeCursor();
 }
 
-function get_ids() {
+function get_ids($all_videos) {
     global $db;
     $query = "SELECT content_id
              FROM content";
-    $all_id = $db->prepare($query);
-    $all_id->execute();
-    return $all_id;  
+    $all_videos = $db->prepare($query);
+    $all_videos->execute();
+	$all_videos = $all_videos->fetchAll(PDO::FETCH_COLUMN, 0);
+	return $all_videos;
+	$all_videos->closeCursor();
 }
 ?>
